@@ -21,8 +21,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../glfw/docs/Doxyfile.in"
   "../glfw/src/CMakeLists.txt"
   "../glfw/src/glfw_config.h.in"
-  "../glm/CMakeLists.txt"
-  "../glm/glm/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -79,8 +77,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "glfw/docs/Doxyfile"
   "glfw/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "glm/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
