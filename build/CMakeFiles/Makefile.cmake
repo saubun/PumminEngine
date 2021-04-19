@@ -17,8 +17,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../glfw/CMake/glfw3.pc.in"
   "../glfw/CMake/glfw3Config.cmake.in"
   "../glfw/CMakeLists.txt"
+  "../glfw/docs/CMakeLists.txt"
+  "../glfw/docs/Doxyfile.in"
   "../glfw/src/CMakeLists.txt"
   "../glfw/src/glfw_config.h.in"
+  "../glm/CMakeLists.txt"
+  "../glm/glm/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -73,6 +77,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "glfw/src/glfw_config.h"
   "glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glfw/docs/Doxyfile"
+  "glfw/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -82,4 +90,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "glew/CMakeFiles/libglew_static.dir/DependInfo.cmake"
   "glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake"
   )

@@ -113,7 +113,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -123,7 +123,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CPackSourceConfig.cmake
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles /Users/dameon0430/Documents/Dev/OpenGLCherno/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs//CMakeFiles/progress.marks
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/docs/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,120 +168,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named PumminEngine
+# Convenience name for target.
+glfw/docs/CMakeFiles/docs.dir/rule:
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw/docs/CMakeFiles/docs.dir/rule
+.PHONY : glfw/docs/CMakeFiles/docs.dir/rule
 
-# Build rule for target.
-PumminEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PumminEngine
-.PHONY : PumminEngine
-
-# fast build rule for target.
-PumminEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/build
-.PHONY : PumminEngine/fast
-
-#=============================================================================
-# Target rules for targets named libglew_shared
-
-# Build rule for target.
-libglew_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libglew_shared
-.PHONY : libglew_shared
-
-# fast build rule for target.
-libglew_shared/fast:
-	$(MAKE) $(MAKESILENT) -f glew/CMakeFiles/libglew_shared.dir/build.make glew/CMakeFiles/libglew_shared.dir/build
-.PHONY : libglew_shared/fast
-
-#=============================================================================
-# Target rules for targets named libglew_static
-
-# Build rule for target.
-libglew_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libglew_static
-.PHONY : libglew_static
-
-# fast build rule for target.
-libglew_static/fast:
-	$(MAKE) $(MAKESILENT) -f glew/CMakeFiles/libglew_static.dir/build.make glew/CMakeFiles/libglew_static.dir/build
-.PHONY : libglew_static/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f glfw/CMakeFiles/uninstall.dir/build.make glfw/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f glfw/src/CMakeFiles/glfw.dir/build.make glfw/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named docs
-
-# Build rule for target.
-docs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs
+# Convenience name for target.
+docs: glfw/docs/CMakeFiles/docs.dir/rule
 .PHONY : docs
 
 # fast build rule for target.
 docs/fast:
-	$(MAKE) $(MAKESILENT) -f glfw/docs/CMakeFiles/docs.dir/build.make glfw/docs/CMakeFiles/docs.dir/build
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(MAKE) $(MAKESILENT) -f glfw/docs/CMakeFiles/docs.dir/build.make glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -298,14 +210,6 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... docs"
-	@echo "... uninstall"
-	@echo "... PumminEngine"
-	@echo "... glfw"
-	@echo "... libglew_shared"
-	@echo "... libglew_static"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -317,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

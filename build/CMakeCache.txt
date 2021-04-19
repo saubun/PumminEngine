@@ -355,7 +355,7 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 DART_TESTING_TIMEOUT:STRING=1500
 
 //Doxygen documentation generation tool (http://www.doxygen.org)
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/local/bin/doxygen
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw
@@ -380,6 +380,9 @@ GLFW_USE_OSMESA:BOOL=OFF
 
 //Assume the Vulkan loader is linked with the application
 GLFW_VULKAN_STATIC:BOOL=OFF
+
+//GLM Build unit tests
+GLM_TEST_ENABLE:BOOL=OFF
 
 //Command to build the project
 MAKECOMMAND:STRING=/usr/local/Cellar/cmake/3.20.0/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
@@ -428,6 +431,12 @@ glew_BINARY_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew
 
 //Value Computed by CMake
 glew_SOURCE_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/glew
+
+//Value Computed by CMake
+glm_BINARY_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glm
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/glm
 
 //Value Computed by CMake
 learnOpenGL_BINARY_DIR:STATIC=/Users/dameon0430/Documents/Dev/OpenGLCherno/build
@@ -574,7 +583,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -669,6 +678,8 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding Doxygen
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/local/bin/doxygen][cfound components: doxygen ][v1.9.1()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
 //Details about finding Threads

@@ -1023,7 +1023,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "7"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1895,7 +1895,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/local/bin/doxygen"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Doxygen",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Doxygen"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/bin/doxygen][cfound components: doxygen ][v1.9.1()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenGL",
@@ -2012,6 +2024,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Assume the Vulkan loader is linked with the application"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "GLM_TEST_ENABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "GLM Build unit tests"
 				}
 			],
 			"type" : "BOOL",
@@ -2248,6 +2272,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew"
+		},
+		{
+			"name" : "glm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glm"
+		},
+		{
+			"name" : "glm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glm"
 		},
 		{
 			"name" : "learnOpenGL_BINARY_DIR",

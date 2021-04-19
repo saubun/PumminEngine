@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						5
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -35,15 +36,16 @@
 					"source" : "glew",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
 					"build" : "glfw",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -55,7 +57,7 @@
 					"source" : "glfw",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -70,8 +72,46 @@
 					"source" : "glfw/src",
 					"targetIndexes" : 
 					[
+						2
+					]
+				},
+				{
+					"build" : "glfw/docs",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "glfw/docs",
+					"targetIndexes" : 
+					[
 						1
 					]
+				},
+				{
+					"build" : "glm",
+					"childIndexes" : 
+					[
+						6
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "glm"
+				},
+				{
+					"build" : "glm/glm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 3,
+					"source" : "glm/glm"
 				}
 			],
 			"name" : "Debug",
@@ -81,7 +121,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -102,23 +143,34 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						3,
+						4
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "GLFW",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						1,
-						4
+						2,
+						5
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "glm",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -126,9 +178,16 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PumminEngine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PumminEngine-Debug-1bdae91537908960ba52.json",
+					"jsonFile" : "target-PumminEngine-Debug-859e3ddc7e2fbfd127d5.json",
 					"name" : "PumminEngine",
 					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "docs::@aa0474f2057a315844e7",
+					"jsonFile" : "target-docs-Debug-c48315f7a6962fbeced1.json",
+					"name" : "docs",
+					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,

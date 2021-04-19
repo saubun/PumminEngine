@@ -42,6 +42,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs/cmake_install.cmake")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
 endif()
@@ -74,5 +79,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src/glfw3.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/GLFW" TYPE DIRECTORY FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs/html")
 endif()
 
