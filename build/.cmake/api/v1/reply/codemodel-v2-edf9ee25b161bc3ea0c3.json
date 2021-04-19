@@ -1,0 +1,175 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "glew",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "glew",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "glfw",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "glfw",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "glfw/src",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "glfw/src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PumminEngine",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "glew",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PumminEngine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PumminEngine-Debug-1bdae91537908960ba52.json",
+					"name" : "PumminEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@12507ebf64a5258d241e",
+					"jsonFile" : "target-glfw-Debug-0792896825cfe3e1abbc.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "libglew_shared::@53e89909b58b5208c234",
+					"jsonFile" : "target-libglew_shared-Debug-eb68df7aa40310b74db5.json",
+					"name" : "libglew_shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "libglew_static::@53e89909b58b5208c234",
+					"jsonFile" : "target-libglew_static-Debug-77314fb023da6a53fbd0.json",
+					"name" : "libglew_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@eb154563b92743f6cbb3",
+					"jsonFile" : "target-uninstall-Debug-971d8b5ab74fe731020c.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+		"source" : "/Users/dameon0430/Documents/Dev/OpenGLCherno"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
