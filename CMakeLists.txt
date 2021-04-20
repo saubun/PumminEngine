@@ -6,12 +6,20 @@ add_subdirectory(glew)
 add_subdirectory(glfw)
 
 # Create executable for project
-add_executable(PumminEngine src/main.cpp)
+set(SOURCES ${SOURCES}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/shader.cpp
+)
+
+set(HEADERS ${HEADERS}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/shader.h 
+)
+
+add_executable(PumminEngine ${SOURCES} ${HEADERS})
 
 # Includes
 target_include_directories(PumminEngine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glew/include)
 target_include_directories(PumminEngine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include)
-target_include_directories(PumminEngine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Link libraries
 target_link_libraries(PumminEngine

@@ -259,6 +259,30 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f glfw/docs/CMakeFiles/docs.dir/build.make glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
+src/classes/shader.o: src/classes/shader.cpp.o
+.PHONY : src/classes/shader.o
+
+# target to build an object file
+src/classes/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o
+.PHONY : src/classes/shader.cpp.o
+
+src/classes/shader.i: src/classes/shader.cpp.i
+.PHONY : src/classes/shader.i
+
+# target to preprocess a source file
+src/classes/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.i
+.PHONY : src/classes/shader.cpp.i
+
+src/classes/shader.s: src/classes/shader.cpp.s
+.PHONY : src/classes/shader.s
+
+# target to generate assembly for a file
+src/classes/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.s
+.PHONY : src/classes/shader.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -303,6 +327,9 @@ help:
 	@echo "... glfw"
 	@echo "... libglew_shared"
 	@echo "... libglew_static"
+	@echo "... src/classes/shader.o"
+	@echo "... src/classes/shader.i"
+	@echo "... src/classes/shader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
