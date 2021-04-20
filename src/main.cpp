@@ -1,4 +1,3 @@
-#define glCheckError() glCheckError_(__FILE__, __LINE__)
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "glm/glm.hpp"
@@ -59,14 +58,20 @@ int main(void)
     std::cout << "Application Started!" << std::endl;
 
     // More setup
+    glEnable(GL_DEPTH_TEST);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetErrorCallback(error_callback);
 
     // Create vertices
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f, // 1
-        0.5f, -0.5f, 0.0f,  // 2
-        0.0f, 0.5f, 0.0f    // 3
+        // first triangle
+        0.5f, 0.5f, 0.0f,  // top right
+        0.5f, -0.5f, 0.0f, // bottom right
+        -0.5f, 0.5f, 0.0f, // top left
+        // second triangle
+        0.5f, -0.5f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, // bottom left
+        -0.5f, 0.5f, 0.0f   // top left
     };
 
     // Create Vertex Array Object
@@ -90,7 +95,7 @@ int main(void)
     Shader shader("../res/shaders/main.vert", "../res/shaders/main.frag");
 
     // Draw mode
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     // Loop until the user closes the window
     while (!glfwWindowShouldClose(window))
@@ -103,25 +108,41 @@ int main(void)
         deltaTime = time - lastFrame;
         lastFrame = time;
 
+        // Calculate cursor pos
+        double xpos, ypos;
+        glfwGetCursorPos(window, &xpos, &ypos);
+        glm::vec3 mousePos = glm::vec3(xpos, ypos, 0.0f);
+
         // Clear screen
-        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Use Shader
         shader.use();
 
+        // Projection
+        glm::mat4 proj = glm::perspective(glm::radians(45.0f), (float)scr_width / (float)scr_height, 0.1f, 100.0f);
+        shader.setMat4("u_Projection", proj);
+
+        // View
+        glm::mat4 view = glm::mat4(1.0f);
+        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+        shader.setMat4("u_View", view);
+
         // Render
         glBindVertexArray(VAO);
 
-        glm::mat4 model = glm::mat4(1.0f);
-        model = glm::rotate(model, (float)time, glm::vec3(0.0, 0.0, 1.0));
-        model = glm::scale(model, glm::vec3(0.5, 0.5, 0.5));
-        shader.setMat4("u_Model", model);
-
-        glm::vec4 color = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f);
+        // Color
+        glm::vec4 color = glm::vec4((float)255 / 255, (float)127 / 255, (float)80 / 255, 1.0f);
         shader.setVec4("u_Color", color);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        // Model
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 1.0f));
+        shader.setMat4("u_Model", model);
+
+        // Draw
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         // Poll and swap buffers
         glfwSwapBuffers(window);

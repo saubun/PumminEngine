@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
 
 CXX_INCLUDES = -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks
 
-CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
+CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
 

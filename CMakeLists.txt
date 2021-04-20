@@ -26,3 +26,6 @@ target_link_libraries(PumminEngine
     glfw
     libglew_static
 )
+
+# Use C++17
+set_property(TARGET PumminEngine PROPERTY CXX_STANDARD 17)
