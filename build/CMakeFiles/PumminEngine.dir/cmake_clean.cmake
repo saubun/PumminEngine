@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o.d"
   "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o"
   "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o.d"
+  "CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o"
+  "CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o.d"
   "CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o"
   "CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o.d"
   "CMakeFiles/PumminEngine.dir/src/main.cpp.o"

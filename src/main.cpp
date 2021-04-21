@@ -10,6 +10,7 @@
 #include "classes/common.h"
 #include "classes/cube_renderer.h"
 #include "classes/vertex_buffer.h"
+#include "classes/vertex_array.h"
 
 int scr_width = 1024;
 int scr_height = 768;
@@ -123,22 +124,14 @@ int main(void)
             -0.5f, 0.5f, 0.5f, /**/ 0.0f, 0.0f,
             -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f};
 
-        // Create Vertex Array Object
-        unsigned int VAO;
-        glCall(glGenVertexArrays(1, &VAO));
-        glCall(glBindVertexArray(VAO));
-
-        // Create Vertex Buffer Object
+        // Create Vertex Array, Vertex Buffer, and Attrib Array
+        VertexArray va;
         VertexBuffer vb(vertices, sizeof(vertices));
+        VertexBufferLayout layout;
+        layout.Push<float>(3);
+        layout.Push<float>(2);
+        va.AddBuffer(vb, layout);
         vb.Bind();
-
-        // Vertex attribs for vertices
-        glCall(glEnableVertexAttribArray(0));
-        glCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)0));
-
-        // Vertex attribs for texture coords
-        glCall(glEnableVertexAttribArray(1));
-        glCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)(3 * sizeof(float))));
 
         // Create shaders
         Shader shader("../res/shaders/main.vert", "../res/shaders/main.frag");
@@ -199,7 +192,8 @@ int main(void)
             // Load textures and VAO
             glCall(glActiveTexture(GL_TEXTURE0));
             glCall(glBindTexture(GL_TEXTURE_2D, texture));
-            glCall(glBindVertexArray(VAO));
+            va.Bind();
+            vb.Bind();
 
             for (int i = 0; i < 16; i++)
             {

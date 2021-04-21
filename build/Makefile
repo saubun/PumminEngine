@@ -335,6 +335,30 @@ src/classes/stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s
 .PHONY : src/classes/stb_image.cpp.s
 
+src/classes/vertex_array.o: src/classes/vertex_array.cpp.o
+.PHONY : src/classes/vertex_array.o
+
+# target to build an object file
+src/classes/vertex_array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o
+.PHONY : src/classes/vertex_array.cpp.o
+
+src/classes/vertex_array.i: src/classes/vertex_array.cpp.i
+.PHONY : src/classes/vertex_array.i
+
+# target to preprocess a source file
+src/classes/vertex_array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.i
+.PHONY : src/classes/vertex_array.cpp.i
+
+src/classes/vertex_array.s: src/classes/vertex_array.cpp.s
+.PHONY : src/classes/vertex_array.s
+
+# target to generate assembly for a file
+src/classes/vertex_array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.s
+.PHONY : src/classes/vertex_array.cpp.s
+
 src/classes/vertex_buffer.o: src/classes/vertex_buffer.cpp.o
 .PHONY : src/classes/vertex_buffer.o
 
@@ -413,6 +437,9 @@ help:
 	@echo "... src/classes/stb_image.o"
 	@echo "... src/classes/stb_image.i"
 	@echo "... src/classes/stb_image.s"
+	@echo "... src/classes/vertex_array.o"
+	@echo "... src/classes/vertex_array.i"
+	@echo "... src/classes/vertex_array.s"
 	@echo "... src/classes/vertex_buffer.o"
 	@echo "... src/classes/vertex_buffer.i"
 	@echo "... src/classes/vertex_buffer.s"

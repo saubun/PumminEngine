@@ -8,6 +8,7 @@ class VertexBuffer
 {
 private:
     unsigned int m_RendererID; // OpenGL's ID
+    const void *m_Data;
 
 public:
     VertexBuffer(const void *data, unsigned int size);

@@ -498,4 +498,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/csignal \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h \
   /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.h \
-  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.h
+  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.h \
+  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_array.h \
+  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer_layout.h

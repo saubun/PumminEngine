@@ -30,6 +30,11 @@
   "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp"
 },
 {
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_array.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_array.cpp"
+},
+{
   "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew",
   "command": "/usr/bin/clang -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c",
   "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c"
