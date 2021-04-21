@@ -9,10 +9,14 @@ add_subdirectory(glfw)
 set(SOURCES ${SOURCES}
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/shader.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/camera.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/stb_image.cpp
 )
 
 set(HEADERS ${HEADERS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/shader.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/shader.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/camera.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/classes/stb_image.h
 )
 
 add_executable(PumminEngine ${SOURCES} ${HEADERS})
