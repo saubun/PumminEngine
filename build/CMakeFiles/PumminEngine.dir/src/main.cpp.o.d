@@ -491,4 +491,7 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/deque \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iomanip \
-  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/sstream
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/sstream \
+  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/camera.h \
+  /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/../glm/gtc/matrix_transform.hpp \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/vector

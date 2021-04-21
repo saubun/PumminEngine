@@ -259,6 +259,30 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f glfw/docs/CMakeFiles/docs.dir/build.make glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
+src/classes/camera.o: src/classes/camera.cpp.o
+.PHONY : src/classes/camera.o
+
+# target to build an object file
+src/classes/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o
+.PHONY : src/classes/camera.cpp.o
+
+src/classes/camera.i: src/classes/camera.cpp.i
+.PHONY : src/classes/camera.i
+
+# target to preprocess a source file
+src/classes/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.i
+.PHONY : src/classes/camera.cpp.i
+
+src/classes/camera.s: src/classes/camera.cpp.s
+.PHONY : src/classes/camera.s
+
+# target to generate assembly for a file
+src/classes/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.s
+.PHONY : src/classes/camera.cpp.s
+
 src/classes/shader.o: src/classes/shader.cpp.o
 .PHONY : src/classes/shader.o
 
@@ -327,6 +351,9 @@ help:
 	@echo "... glfw"
 	@echo "... libglew_shared"
 	@echo "... libglew_static"
+	@echo "... src/classes/camera.o"
+	@echo "... src/classes/camera.i"
+	@echo "... src/classes/camera.s"
 	@echo "... src/classes/shader.o"
 	@echo "... src/classes/shader.i"
 	@echo "... src/classes/shader.s"
