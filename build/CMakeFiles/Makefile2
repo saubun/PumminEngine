@@ -149,8 +149,8 @@ glfw/src/clean: glfw/src/CMakeFiles/glfw.dir/clean
 # Target rules for target CMakeFiles/PumminEngine.dir
 
 # All Build rule for target.
-CMakeFiles/PumminEngine.dir/all: glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/PumminEngine.dir/all: glew/CMakeFiles/libglew_static.dir/all
+CMakeFiles/PumminEngine.dir/all: glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=1,2,3 "Built target PumminEngine"

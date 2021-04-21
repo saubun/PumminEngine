@@ -873,6 +873,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/csignal \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h \
   ../src/classes/shader.h \
   ../src/glm/glm.hpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/fstream \
@@ -883,6 +885,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream
 
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/csignal:
 
 ../src/glm/gtc/type_ptr.inl:
 
@@ -1165,6 +1169,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__string:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/string_view:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/signal.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/string:
 

@@ -115,11 +115,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@12507ebf64a5258d241e"
+			"id" : "libglew_static::@53e89909b58b5208c234"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "libglew_static::@53e89909b58b5208c234"
+			"id" : "glfw::@12507ebf64a5258d241e"
 		}
 	],
 	"id" : "PumminEngine::@6890427a1f51a3e7e1df",
