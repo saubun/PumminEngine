@@ -4,19 +4,12 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 #include <iostream>
-#include <csignal>
 #include "classes/shader.h"
 #include "classes/camera.h"
 #include "classes/stb_image.h"
-
-#define ASSERT(x) \
-    if (!(x))     \
-        std::raise(SIGTRAP);
-
-#define glCall(x)   \
-    GLClearError(); \
-    x;              \
-    ASSERT(GLLogCall(#x, __FILE__, __LINE__));
+#include "classes/common.h"
+#include "classes/cube_renderer.h"
+#include "classes/vertex_buffer.h"
 
 int scr_width = 1024;
 int scr_height = 768;
@@ -29,8 +22,6 @@ float lastX = scr_width / 2.0f;
 float lastY = scr_height / 2.0f;
 bool firstMouse = true;
 
-static void GLClearError();
-static bool GLLogCall(const char *function, const char *file, int line);
 void mouse_callback(GLFWwindow *window, double xpos, double ypos);
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -87,160 +78,152 @@ int main(void)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    // Create vertices
-    float vertices[] = {
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, /**/ 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 0.0f,
-
-        -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 1.0f,
-        -0.5f, 0.5f, 0.5f, /**/ 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
-
-        -0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
-
-        -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, /**/ 0.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f};
-
-    // Create Vertex Array Object
-    unsigned int VAO;
-    glCall(glGenVertexArrays(1, &VAO));
-    glCall(glBindVertexArray(VAO));
-
-    // Create Vertex Buffer Object
-    unsigned int VBO;
-    glCall(glGenBuffers(1, &VBO));
-
-    // Bind VBO
-    glCall(glBindBuffer(GL_ARRAY_BUFFER, VBO));
-    glCall(glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW));
-
-    // Vertex attribs for vertices
-    glCall(glEnableVertexAttribArray(0));
-    glCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)0));
-
-    // Vertex attribs for texture coords
-    glCall(glEnableVertexAttribArray(1));
-    glCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)(3 * sizeof(float))));
-
-    // Create shaders
-    Shader shader("../res/shaders/main.vert", "../res/shaders/main.frag");
-
-    // Load image
-    int width, height, nrChannels;
-    unsigned char *data = stbi_load("../res/img/grass.jpg", &width, &height, &nrChannels, 0);
-
-    // Create a texture
-    unsigned int texture;
-    glCall(glGenTextures(1, &texture));
-
-    // Bind and generate texture
-    glCall(glBindTexture(GL_TEXTURE_2D, texture));
-    if (data)
     {
-        glCall(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data));
-        glCall(glGenerateMipmap(GL_TEXTURE_2D));
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
+        // Create vertices
+        float vertices[] = {
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 0.0f,
+            0.5f, -0.5f, -0.5f, /**/ 1.0f, 0.0f,
+            0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 0.0f,
 
-    stbi_image_free(data);
+            -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
+            0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 1.0f,
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 1.0f,
+            -0.5f, 0.5f, 0.5f, /**/ 0.0f, 1.0f,
+            -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
 
-    // Loop until the user closes the window
-    while (!glfwWindowShouldClose(window))
-    {
-        // Input & deltaTime
-        processInput(window);
-        double time = glfwGetTime();
+            -0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            -0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
+            -0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
 
-        // Calculate deltaTime
-        deltaTime = time - lastFrame;
-        lastFrame = time;
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
 
-        // Clear screen
-        glm::vec3 clearColor = glm::vec3(129.0f, 161.0f, 193.0f);
-        glClearColor(clearColor.x / 255, clearColor.y / 255, clearColor.z / 255, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            0.5f, -0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            -0.5f, -0.5f, 0.5f, /**/ 0.0f, 0.0f,
+            -0.5f, -0.5f, -0.5f, /**/ 0.0f, 1.0f,
 
-        // Use Shader
-        shader.use();
+            -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f,
+            0.5f, 0.5f, -0.5f, /**/ 1.0f, 1.0f,
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            0.5f, 0.5f, 0.5f, /**/ 1.0f, 0.0f,
+            -0.5f, 0.5f, 0.5f, /**/ 0.0f, 0.0f,
+            -0.5f, 0.5f, -0.5f, /**/ 0.0f, 1.0f};
 
-        // Projection
-        glm::mat4 proj = glm::perspective(glm::radians(camera.Zoom), (float)scr_width / (float)scr_height, 0.1f, 100.0f);
-        shader.setMat4("u_Projection", proj);
-
-        // View
-        glm::mat4 view = camera.GetViewMatrix();
-        shader.setMat4("u_View", view);
-
-        // Lighting
-        glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f);
-        shader.setVec3("u_LightColor", color);
-
-        // Load textures and VAO
-        glCall(glActiveTexture(GL_TEXTURE0));
-        glCall(glBindTexture(GL_TEXTURE_2D, texture));
+        // Create Vertex Array Object
+        unsigned int VAO;
+        glCall(glGenVertexArrays(1, &VAO));
         glCall(glBindVertexArray(VAO));
 
-        for (int i = 0; i < 16; i++)
-        {
-            for (int j = 0; j < 1; j++)
-            {
-                for (int k = 0; k < 16; k++)
-                {
-                    // Model
-                    glm::mat4 model = glm::mat4(1.0f);
-                    model = glm::translate(model, glm::vec3(0.5f * i, 0.5f * j, 0.5f * k));
-                    model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
-                    shader.setMat4("u_Model", model);
+        // Create Vertex Buffer Object
+        VertexBuffer vb(vertices, sizeof(vertices));
+        vb.Bind();
 
-                    // Draw
-                    glCall(glDrawArrays(GL_TRIANGLES, 0, 36));
-                }
-            }
+        // Vertex attribs for vertices
+        glCall(glEnableVertexAttribArray(0));
+        glCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)0));
+
+        // Vertex attribs for texture coords
+        glCall(glEnableVertexAttribArray(1));
+        glCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void *)(3 * sizeof(float))));
+
+        // Create shaders
+        Shader shader("../res/shaders/main.vert", "../res/shaders/main.frag");
+
+        // Load image
+        int width, height, nrChannels;
+        unsigned char *data = stbi_load("../res/img/grass.jpg", &width, &height, &nrChannels, 0);
+
+        // Create a texture
+        unsigned int texture;
+        glCall(glGenTextures(1, &texture));
+
+        // Bind and generate texture
+        glCall(glBindTexture(GL_TEXTURE_2D, texture));
+        if (data)
+        {
+            glCall(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data));
+            glCall(glGenerateMipmap(GL_TEXTURE_2D));
+        }
+        else
+        {
+            std::cout << "Failed to load texture" << std::endl;
         }
 
-        // Poll and swap buffers
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-    }
+        stbi_image_free(data);
 
-    // Cleanup
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-    glUseProgram(0);
+        // Loop until the user closes the window
+        while (!glfwWindowShouldClose(window))
+        {
+            // Input & deltaTime
+            processInput(window);
+            double time = glfwGetTime();
+
+            // Calculate deltaTime
+            deltaTime = time - lastFrame;
+            lastFrame = time;
+
+            // Clear screen
+            glm::vec3 clearColor = glm::vec3(129.0f, 161.0f, 193.0f);
+            glClearColor(clearColor.x / 255, clearColor.y / 255, clearColor.z / 255, 1.0f);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+            // Use Shader
+            shader.use();
+
+            // Projection
+            glm::mat4 proj = glm::perspective(glm::radians(camera.Zoom), (float)scr_width / (float)scr_height, 0.1f, 100.0f);
+            shader.setMat4("u_Projection", proj);
+
+            // View
+            glm::mat4 view = camera.GetViewMatrix();
+            shader.setMat4("u_View", view);
+
+            // Lighting
+            glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f);
+            shader.setVec3("u_LightColor", color);
+
+            // Load textures and VAO
+            glCall(glActiveTexture(GL_TEXTURE0));
+            glCall(glBindTexture(GL_TEXTURE_2D, texture));
+            glCall(glBindVertexArray(VAO));
+
+            for (int i = 0; i < 16; i++)
+            {
+                for (int j = 0; j < 1; j++)
+                {
+                    for (int k = 0; k < 16; k++)
+                    {
+                        // Model
+                        glm::mat4 model = glm::mat4(1.0f);
+                        model = glm::translate(model, glm::vec3(0.5f * i, 0.5f * j, 0.5f * k));
+                        model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
+                        shader.setMat4("u_Model", model);
+
+                        // Draw
+                        glCall(glDrawArrays(GL_TRIANGLES, 0, 36));
+                    }
+                }
+            }
+
+            // Poll and swap buffers
+            glfwSwapBuffers(window);
+            glfwPollEvents();
+        }
+    }
     glfwTerminate();
     return 0;
 }
@@ -266,22 +249,6 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height)
     scr_width = width;
     scr_height = height;
     glViewport(0, 0, width, height);
-}
-
-static void GLClearError()
-{
-    while (glGetError() != GL_NO_ERROR)
-        ;
-}
-
-static bool GLLogCall(const char *function, const char *file, int line)
-{
-    while (GLenum error = glGetError())
-    {
-        std::cout << "[Error] (" << error << "): At " << function << " at line " << line << " in file " << file << "\n";
-        return false;
-    }
-    return true;
 }
 
 void processInput(GLFWwindow *window)

@@ -125,12 +125,42 @@ CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/stb_image.cpp -o CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s
 
+CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o: CMakeFiles/PumminEngine.dir/flags.make
+CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o: ../src/classes/cube_renderer.cpp
+CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o: CMakeFiles/PumminEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o -MF CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o.d -o CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.cpp
+
+CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.cpp > CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.i
+
+CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.cpp -o CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.s
+
+CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o: CMakeFiles/PumminEngine.dir/flags.make
+CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o: ../src/classes/vertex_buffer.cpp
+CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o: CMakeFiles/PumminEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o -MF CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o.d -o CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp
+
+CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp > CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.i
+
+CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp -o CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.s
+
 # Object files for target PumminEngine
 PumminEngine_OBJECTS = \
 "CMakeFiles/PumminEngine.dir/src/main.cpp.o" \
 "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o" \
 "CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o" \
-"CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o"
+"CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o" \
+"CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o" \
+"CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o"
 
 # External object files for target PumminEngine
 PumminEngine_EXTERNAL_OBJECTS =
@@ -139,12 +169,14 @@ PumminEngine: CMakeFiles/PumminEngine.dir/src/main.cpp.o
 PumminEngine: CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o
 PumminEngine: CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o
 PumminEngine: CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o
+PumminEngine: CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o
+PumminEngine: CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o
 PumminEngine: CMakeFiles/PumminEngine.dir/build.make
 PumminEngine: glfw/src/libglfw3.a
 PumminEngine: glew/lib/libglewd.a
 PumminEngine: /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
 PumminEngine: CMakeFiles/PumminEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PumminEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable PumminEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PumminEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

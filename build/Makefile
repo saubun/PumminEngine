@@ -110,26 +110,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -283,6 +263,30 @@ src/classes/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.s
 .PHONY : src/classes/camera.cpp.s
 
+src/classes/cube_renderer.o: src/classes/cube_renderer.cpp.o
+.PHONY : src/classes/cube_renderer.o
+
+# target to build an object file
+src/classes/cube_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o
+.PHONY : src/classes/cube_renderer.cpp.o
+
+src/classes/cube_renderer.i: src/classes/cube_renderer.cpp.i
+.PHONY : src/classes/cube_renderer.i
+
+# target to preprocess a source file
+src/classes/cube_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.i
+.PHONY : src/classes/cube_renderer.cpp.i
+
+src/classes/cube_renderer.s: src/classes/cube_renderer.cpp.s
+.PHONY : src/classes/cube_renderer.s
+
+# target to generate assembly for a file
+src/classes/cube_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.s
+.PHONY : src/classes/cube_renderer.cpp.s
+
 src/classes/shader.o: src/classes/shader.cpp.o
 .PHONY : src/classes/shader.o
 
@@ -331,6 +335,30 @@ src/classes/stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s
 .PHONY : src/classes/stb_image.cpp.s
 
+src/classes/vertex_buffer.o: src/classes/vertex_buffer.cpp.o
+.PHONY : src/classes/vertex_buffer.o
+
+# target to build an object file
+src/classes/vertex_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o
+.PHONY : src/classes/vertex_buffer.cpp.o
+
+src/classes/vertex_buffer.i: src/classes/vertex_buffer.cpp.i
+.PHONY : src/classes/vertex_buffer.i
+
+# target to preprocess a source file
+src/classes/vertex_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.i
+.PHONY : src/classes/vertex_buffer.cpp.i
+
+src/classes/vertex_buffer.s: src/classes/vertex_buffer.cpp.s
+.PHONY : src/classes/vertex_buffer.s
+
+# target to generate assembly for a file
+src/classes/vertex_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.s
+.PHONY : src/classes/vertex_buffer.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -366,8 +394,6 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... package"
-	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... docs"
 	@echo "... uninstall"
@@ -378,12 +404,18 @@ help:
 	@echo "... src/classes/camera.o"
 	@echo "... src/classes/camera.i"
 	@echo "... src/classes/camera.s"
+	@echo "... src/classes/cube_renderer.o"
+	@echo "... src/classes/cube_renderer.i"
+	@echo "... src/classes/cube_renderer.s"
 	@echo "... src/classes/shader.o"
 	@echo "... src/classes/shader.i"
 	@echo "... src/classes/shader.s"
 	@echo "... src/classes/stb_image.o"
 	@echo "... src/classes/stb_image.i"
 	@echo "... src/classes/stb_image.s"
+	@echo "... src/classes/vertex_buffer.o"
+	@echo "... src/classes/vertex_buffer.i"
+	@echo "... src/classes/vertex_buffer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
