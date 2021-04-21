@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o.d"
   "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o"
   "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o.d"
+  "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o"
+  "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o.d"
   "CMakeFiles/PumminEngine.dir/src/main.cpp.o"
   "CMakeFiles/PumminEngine.dir/src/main.cpp.o.d"
   "PumminEngine"

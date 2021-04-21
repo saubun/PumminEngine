@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/camera.cpp" "CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o" "gcc" "CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o.d"
   "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/shader.cpp" "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o" "gcc" "CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o.d"
+  "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/stb_image.cpp" "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o" "gcc" "CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o.d"
   "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/main.cpp" "CMakeFiles/PumminEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/PumminEngine.dir/src/main.cpp.o.d"
   )
 

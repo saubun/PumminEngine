@@ -712,6 +712,114 @@ CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o: ../src/classes/shader.cpp 
   /Library/Developer/CommandLineTools/usr/include/c++/v1/iostream \
   ../src/classes/shader.h
 
+CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o: ../src/classes/stb_image.cpp \
+  ../src/classes/stb_image.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdio.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__config \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_va_list.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctermid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_off_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/mach/i386/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_uintmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/math.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__cxx_version \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__nullptr \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/limits \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__undef_macros \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/strings.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/xmmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/mm_malloc.h
+
 CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
   ../glew/include/GL/glew.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef \
@@ -1207,7 +1315,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/sstream \
   ../src/classes/camera.h \
   ../src/glm/gtc/matrix_transform.hpp \
-  /Library/Developer/CommandLineTools/usr/include/c++/v1/vector
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/vector \
+  ../src/classes/stb_image.h
 
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/csignal:
@@ -1252,7 +1361,15 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/glm/ext/quaternion_geometric.inl:
 
+../src/glm/ext/quaternion_geometric.hpp:
+
+../src/glm/detail/type_float.hpp:
+
+../src/glm/ext/vector_relational.inl:
+
 ../glfw/include/GLFW/glfw3.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/mm_malloc.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/math.h:
 
@@ -1276,12 +1393,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_copy.h:
 
-../src/glm/ext/matrix_double4x4_precision.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h:
-
-../src/glm/gtc/quaternion.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_zero.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_set.h:
@@ -1293,12 +1404,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_fd_setsize.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_nlink_t.h:
-
-../src/glm/ext/vector_uint1_sized.hpp:
-
-../src/glm/detail/func_integer.inl:
-
-../src/glm/ext/vector_relational.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_key_t.h:
 
@@ -1323,6 +1428,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_wctype.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/mmintrin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/xlocale/_stdlib.h:
 
@@ -1382,8 +1489,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/cerrno:
 
-../src/glm/detail/type_float.hpp:
-
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ctime:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
@@ -1428,6 +1533,12 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_mcontext.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_types.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/xmmintrin.h:
+
 /Library/Developer/CommandLineTools/usr/include/c++/v1/new:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/typeinfo:
@@ -1442,9 +1553,17 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h:
 
+../src/glm/gtc/quaternion.hpp:
+
+../src/glm/ext/matrix_double4x4_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/ctype.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/ctype.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/emmintrin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h:
 
@@ -1550,6 +1669,12 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/glm/detail/func_common.inl:
 
+../src/glm/ext/vector_uint1_sized.hpp:
+
+../src/glm/ext/vector_relational.hpp:
+
+../src/glm/detail/func_integer.inl:
+
 ../src/glm/vector_relational.hpp:
 
 ../src/glm/detail/func_exponential.inl:
@@ -1587,6 +1712,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 ../src/glm/ext/matrix_double4x3_precision.hpp:
 
 ../src/glm/ext/matrix_double3x4_precision.hpp:
+
+../src/classes/stb_image.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdio.h:
 
@@ -1690,10 +1817,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/glm/mat4x3.hpp:
 
-/Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef:
-
-../src/glm/ext/quaternion_common.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int64_t.h:
 
 ../src/glm/ext/matrix_float2x3_precision.hpp:
@@ -1788,10 +1911,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/glm/ext/vector_double2.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/i386/_mcontext.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/machine/_types.h:
-
 ../src/glm/ext/vector_bool2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_short.h:
@@ -1833,8 +1952,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/usr/include/c++/v1/filesystem:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/limits.h:
-
-../src/glm/ext/vector_relational.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h:
 
@@ -1912,6 +2029,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/appleapiopts.h:
 
+../src/classes/stb_image.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/wait.h:
@@ -1968,6 +2087,10 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h:
 
+../src/glm/ext/quaternion_common.hpp:
+
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef:
+
 ../src/glm/mat4x4.hpp:
 
 ../src/glm/mat3x2.hpp:
@@ -2015,8 +2138,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_int32_t.h:
-
-../src/glm/ext/quaternion_geometric.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ct_rune_t.h:
 

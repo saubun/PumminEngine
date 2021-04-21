@@ -307,6 +307,30 @@ src/classes/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.s
 .PHONY : src/classes/shader.cpp.s
 
+src/classes/stb_image.o: src/classes/stb_image.cpp.o
+.PHONY : src/classes/stb_image.o
+
+# target to build an object file
+src/classes/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o
+.PHONY : src/classes/stb_image.cpp.o
+
+src/classes/stb_image.i: src/classes/stb_image.cpp.i
+.PHONY : src/classes/stb_image.i
+
+# target to preprocess a source file
+src/classes/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.i
+.PHONY : src/classes/stb_image.cpp.i
+
+src/classes/stb_image.s: src/classes/stb_image.cpp.s
+.PHONY : src/classes/stb_image.s
+
+# target to generate assembly for a file
+src/classes/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s
+.PHONY : src/classes/stb_image.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -357,6 +381,9 @@ help:
 	@echo "... src/classes/shader.o"
 	@echo "... src/classes/shader.i"
 	@echo "... src/classes/shader.s"
+	@echo "... src/classes/stb_image.o"
+	@echo "... src/classes/stb_image.i"
+	@echo "... src/classes/stb_image.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
