@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/main.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/main.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/main.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/shader.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/shader.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/camera.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/camera.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/stb_image.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/stb_image.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/cube_renderer.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_buffer.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build",
+  "command": "/usr/bin/clang++ -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_array.cpp",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/src/classes/vertex_array.cpp"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew",
+  "command": "/usr/bin/clang -DGLEW_NO_GLU -DGLEW_STATIC -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew",
+  "command": "/usr/bin/clang -DGLEW_BUILD -DGLEW_NO_GLU -Dlibglew_shared_EXPORTS -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -o CMakeFiles/libglew_shared.dir/src/glew.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/context.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/context.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/context.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/init.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/init.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/init.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/input.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/input.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/input.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/monitor.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/monitor.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/vulkan.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/vulkan.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/window.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/window.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/window.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_init.m",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_init.m"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_joystick.m",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_joystick.m"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_monitor.m",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_monitor.m"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_window.m",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_window.m"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_time.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/cocoa_time.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/posix_thread.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/nsgl_context.m",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/nsgl_context.m"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/egl_context.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/egl_context.c"
+},
+{
+  "directory": "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/osmesa_context.c",
+  "file": "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src/osmesa_context.c"
+}
+]
