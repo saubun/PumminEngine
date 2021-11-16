@@ -1,4 +1,4 @@
-# Install script for directory: /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs
+# Install script for directory: /Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

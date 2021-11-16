@@ -1,4 +1,4 @@
-# Install script for directory: /Users/dameon0430/Documents/Dev/OpenGLCherno
+# Install script for directory: /Users/dameon0430/Documents/Dev/PumminEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/cmake_install.cmake")
-  include("/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/cmake_install.cmake")
+  include("/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/cmake_install.cmake")
+  include("/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/dameon0430/Documents/Dev/PumminEngine/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

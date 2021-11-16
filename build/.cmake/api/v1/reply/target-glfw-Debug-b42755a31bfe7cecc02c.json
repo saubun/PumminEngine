@@ -111,15 +111,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include"
+					"path" : "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src"
+					"path" : "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src"
+					"path" : "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/src"
 				}
 			],
 			"language" : "C",

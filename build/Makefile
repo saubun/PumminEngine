@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.20.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno
+CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/PumminEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno/build
+CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/PumminEngine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles /Users/dameon0430/Documents/Dev/OpenGLCherno/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/PumminEngine/build/CMakeFiles /Users/dameon0430/Documents/Dev/PumminEngine/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dameon0430/Documents/Dev/PumminEngine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -239,150 +239,6 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f glfw/docs/CMakeFiles/docs.dir/build.make glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
-src/classes/camera.o: src/classes/camera.cpp.o
-.PHONY : src/classes/camera.o
-
-# target to build an object file
-src/classes/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.o
-.PHONY : src/classes/camera.cpp.o
-
-src/classes/camera.i: src/classes/camera.cpp.i
-.PHONY : src/classes/camera.i
-
-# target to preprocess a source file
-src/classes/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.i
-.PHONY : src/classes/camera.cpp.i
-
-src/classes/camera.s: src/classes/camera.cpp.s
-.PHONY : src/classes/camera.s
-
-# target to generate assembly for a file
-src/classes/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/camera.cpp.s
-.PHONY : src/classes/camera.cpp.s
-
-src/classes/cube_renderer.o: src/classes/cube_renderer.cpp.o
-.PHONY : src/classes/cube_renderer.o
-
-# target to build an object file
-src/classes/cube_renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.o
-.PHONY : src/classes/cube_renderer.cpp.o
-
-src/classes/cube_renderer.i: src/classes/cube_renderer.cpp.i
-.PHONY : src/classes/cube_renderer.i
-
-# target to preprocess a source file
-src/classes/cube_renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.i
-.PHONY : src/classes/cube_renderer.cpp.i
-
-src/classes/cube_renderer.s: src/classes/cube_renderer.cpp.s
-.PHONY : src/classes/cube_renderer.s
-
-# target to generate assembly for a file
-src/classes/cube_renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/cube_renderer.cpp.s
-.PHONY : src/classes/cube_renderer.cpp.s
-
-src/classes/shader.o: src/classes/shader.cpp.o
-.PHONY : src/classes/shader.o
-
-# target to build an object file
-src/classes/shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.o
-.PHONY : src/classes/shader.cpp.o
-
-src/classes/shader.i: src/classes/shader.cpp.i
-.PHONY : src/classes/shader.i
-
-# target to preprocess a source file
-src/classes/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.i
-.PHONY : src/classes/shader.cpp.i
-
-src/classes/shader.s: src/classes/shader.cpp.s
-.PHONY : src/classes/shader.s
-
-# target to generate assembly for a file
-src/classes/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/shader.cpp.s
-.PHONY : src/classes/shader.cpp.s
-
-src/classes/stb_image.o: src/classes/stb_image.cpp.o
-.PHONY : src/classes/stb_image.o
-
-# target to build an object file
-src/classes/stb_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.o
-.PHONY : src/classes/stb_image.cpp.o
-
-src/classes/stb_image.i: src/classes/stb_image.cpp.i
-.PHONY : src/classes/stb_image.i
-
-# target to preprocess a source file
-src/classes/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.i
-.PHONY : src/classes/stb_image.cpp.i
-
-src/classes/stb_image.s: src/classes/stb_image.cpp.s
-.PHONY : src/classes/stb_image.s
-
-# target to generate assembly for a file
-src/classes/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/stb_image.cpp.s
-.PHONY : src/classes/stb_image.cpp.s
-
-src/classes/vertex_array.o: src/classes/vertex_array.cpp.o
-.PHONY : src/classes/vertex_array.o
-
-# target to build an object file
-src/classes/vertex_array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.o
-.PHONY : src/classes/vertex_array.cpp.o
-
-src/classes/vertex_array.i: src/classes/vertex_array.cpp.i
-.PHONY : src/classes/vertex_array.i
-
-# target to preprocess a source file
-src/classes/vertex_array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.i
-.PHONY : src/classes/vertex_array.cpp.i
-
-src/classes/vertex_array.s: src/classes/vertex_array.cpp.s
-.PHONY : src/classes/vertex_array.s
-
-# target to generate assembly for a file
-src/classes/vertex_array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_array.cpp.s
-.PHONY : src/classes/vertex_array.cpp.s
-
-src/classes/vertex_buffer.o: src/classes/vertex_buffer.cpp.o
-.PHONY : src/classes/vertex_buffer.o
-
-# target to build an object file
-src/classes/vertex_buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.o
-.PHONY : src/classes/vertex_buffer.cpp.o
-
-src/classes/vertex_buffer.i: src/classes/vertex_buffer.cpp.i
-.PHONY : src/classes/vertex_buffer.i
-
-# target to preprocess a source file
-src/classes/vertex_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.i
-.PHONY : src/classes/vertex_buffer.cpp.i
-
-src/classes/vertex_buffer.s: src/classes/vertex_buffer.cpp.s
-.PHONY : src/classes/vertex_buffer.s
-
-# target to generate assembly for a file
-src/classes/vertex_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PumminEngine.dir/build.make CMakeFiles/PumminEngine.dir/src/classes/vertex_buffer.cpp.s
-.PHONY : src/classes/vertex_buffer.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -425,24 +281,6 @@ help:
 	@echo "... glfw"
 	@echo "... libglew_shared"
 	@echo "... libglew_static"
-	@echo "... src/classes/camera.o"
-	@echo "... src/classes/camera.i"
-	@echo "... src/classes/camera.s"
-	@echo "... src/classes/cube_renderer.o"
-	@echo "... src/classes/cube_renderer.i"
-	@echo "... src/classes/cube_renderer.s"
-	@echo "... src/classes/shader.o"
-	@echo "... src/classes/shader.i"
-	@echo "... src/classes/shader.s"
-	@echo "... src/classes/stb_image.o"
-	@echo "... src/classes/stb_image.i"
-	@echo "... src/classes/stb_image.s"
-	@echo "... src/classes/vertex_array.o"
-	@echo "... src/classes/vertex_array.i"
-	@echo "... src/classes/vertex_array.s"
-	@echo "... src/classes/vertex_buffer.o"
-	@echo "... src/classes/vertex_buffer.i"
-	@echo "... src/classes/vertex_buffer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

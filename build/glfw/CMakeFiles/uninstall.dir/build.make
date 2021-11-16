@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.20.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno
+CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/PumminEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno/build
+CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/PumminEngine/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include glfw/CMakeFiles/uninstall.dir/progress.make
 
 glfw/CMakeFiles/uninstall:
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/cmake_uninstall.cmake
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/cmake_uninstall.cmake
 
 uninstall: glfw/CMakeFiles/uninstall
 uninstall: glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : glfw/CMakeFiles/uninstall.dir/build
 
 glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : glfw/CMakeFiles/uninstall.dir/clean
 
 glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dameon0430/Documents/Dev/OpenGLCherno /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw /Users/dameon0430/Documents/Dev/OpenGLCherno/build /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dameon0430/Documents/Dev/PumminEngine /Users/dameon0430/Documents/Dev/PumminEngine/glfw /Users/dameon0430/Documents/Dev/PumminEngine/build /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : glfw/CMakeFiles/uninstall.dir/depend
 

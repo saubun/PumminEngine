@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1531,7 +1531,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1591,7 +1591,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/glfw"
 		},
 		{
 			"name" : "GLFW_USE_OSMESA",
@@ -1699,7 +1699,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/build"
 		},
 		{
 			"name" : "PumminEngine_SOURCE_DIR",
@@ -1711,7 +1711,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine"
 		},
 		{
 			"name" : "USE_GLU",
@@ -1771,7 +1771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew"
 		},
 		{
 			"name" : "glew_SOURCE_DIR",
@@ -1783,7 +1783,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew"
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/glew"
 		},
 		{
 			"name" : "libglew_shared_LIB_DEPENDS",

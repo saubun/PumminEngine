@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "glew/lib/libglewd.a"
+			"path" : "glew/lib/libglew-sharedd.dylib"
 		}
 	],
 	"backtrace" : 1,
@@ -13,9 +12,9 @@
 		[
 			"add_library",
 			"install",
+			"target_link_libraries",
 			"target_compile_definitions",
-			"target_include_directories",
-			"target_link_libraries"
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -29,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 165,
+				"line" : 174,
 				"parent" : 0
 			},
 			{
@@ -41,25 +40,25 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 196,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 169,
+				"line" : 198,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 197,
+				"line" : 184,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 196,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 198,
+				"line" : 197,
 				"parent" : 0
 			}
 		]
@@ -70,28 +69,31 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk"
+					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
+					"define" : "GLEW_BUILD"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "GLEW_NO_GLU"
 				},
 				{
-					"backtrace" : 4,
-					"define" : "GLEW_STATIC"
+					"define" : "libglew_shared_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include"
+					"backtrace" : 6,
+					"path" : "/Users/dameon0430/Documents/Dev/PumminEngine/glew/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework"
 				}
@@ -103,11 +105,15 @@
 			]
 		}
 	],
-	"id" : "libglew_static::@53e89909b58b5208c234",
+	"id" : "libglew_shared::@53e89909b58b5208c234",
 	"install" : 
 	{
 		"destinations" : 
 		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
 			{
 				"backtrace" : 2,
 				"path" : "lib"
@@ -118,8 +124,32 @@
 			"path" : "/usr/local"
 		}
 	},
-	"name" : "libglew_static",
-	"nameOnDisk" : "libglewd.a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "AGL",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "libglew_shared",
+	"nameOnDisk" : "libglew-sharedd.dylib",
 	"paths" : 
 	{
 		"build" : "glew",
@@ -144,5 +174,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

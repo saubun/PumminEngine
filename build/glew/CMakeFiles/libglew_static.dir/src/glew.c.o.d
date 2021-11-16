@@ -1,6 +1,6 @@
 glew/CMakeFiles/libglew_static.dir/src/glew.c.o: \
-  /Users/dameon0430/Documents/Dev/OpenGLCherno/glew/src/glew.c \
-  /Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include/GL/glew.h \
+  /Users/dameon0430/Documents/Dev/PumminEngine/glew/src/glew.c \
+  /Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/glew.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h \

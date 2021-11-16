@@ -4,7 +4,7 @@
 # compile C with /usr/bin/clang
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include -I/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/src -I/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/src
+C_INCLUDES = -I/Users/dameon0430/Documents/Dev/PumminEngine/glfw/include -I/Users/dameon0430/Documents/Dev/PumminEngine/glfw/src -I/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/src
 
 C_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -Wall -std=c99
 

@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/install_manifest.txt" files)
+file(READ "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

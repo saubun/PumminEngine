@@ -1,4 +1,4 @@
-# Install script for directory: /Users/dameon0430/Documents/Dev/OpenGLCherno/glew
+# Install script for directory: /Users/dameon0430/Documents/Dev/PumminEngine/glew
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/lib/libglewd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/lib/libglewd.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglewd.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglewd.a")
     execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglewd.a")
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/lib/libglew-sharedd.2.2.0.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/lib/libglew-sharedd.2.2.0.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew-sharedd.2.2.0.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew-sharedd.2.2.0.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/lib/libglew-sharedd.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/lib/libglew-sharedd.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew-sharedd.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew-sharedd.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -69,7 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glewConfig.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glewConfig.cmake"
-         "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig.cmake")
+         "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glewConfig-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -78,18 +78,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "/Users/dameon0430/Documents/Dev/PumminEngine/build/glew/CMakeFiles/Export/lib/cmake/glew/glewConfig-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/GL" TYPE FILE FILES
-    "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include/GL/eglew.h"
-    "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include/GL/glew.h"
-    "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include/GL/glxew.h"
-    "/Users/dameon0430/Documents/Dev/OpenGLCherno/glew/include/GL/wglew.h"
+    "/Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/eglew.h"
+    "/Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/glew.h"
+    "/Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/glxew.h"
+    "/Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/wglew.h"
     )
 endif()
 

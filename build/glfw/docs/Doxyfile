@@ -58,7 +58,7 @@ PROJECT_LOGO           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs"
+OUTPUT_DIRECTORY       = "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs"
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -736,7 +736,7 @@ FILE_VERSION_FILTER    =
 # DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
 # tag is left empty.
 
-LAYOUT_FILE            = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/DoxygenLayout.xml"
+LAYOUT_FILE            = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/DoxygenLayout.xml"
 
 # The CITE_BIB_FILES tag can be used to specify one or more bib files containing
 # the reference definitions. This must be a list of .bib files. The .bib
@@ -812,7 +812,7 @@ WARN_FORMAT            = "$file:$line: $text"
 # messages should be written. If left blank the output is written to standard
 # error (stderr).
 
-WARN_LOGFILE           = "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs/warnings.txt"
+WARN_LOGFILE           = "/Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs/warnings.txt"
 
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
@@ -825,22 +825,22 @@ WARN_LOGFILE           = "/Users/dameon0430/Documents/Dev/OpenGLCherno/build/glf
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  =  \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include/GLFW/glfw3.h" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/include/GLFW/glfw3native.h" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/main.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/news.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/quick.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/moving.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/compile.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/build.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/intro.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/context.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/monitor.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/window.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/input.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/vulkan.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/compat.dox" \
-"/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/internal.dox"
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/include/GLFW/glfw3.h" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/include/GLFW/glfw3native.h" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/main.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/news.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/quick.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/moving.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/compile.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/build.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/intro.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/context.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/monitor.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/window.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/input.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/vulkan.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/compat.dox" \
+"/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/internal.dox"
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -915,7 +915,7 @@ EXCLUDE_SYMBOLS        = APIENTRY GLFWAPI
 # that contain example code fragments that are included (see the \include
 # command).
 
-EXAMPLE_PATH           = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/examples"
+EXAMPLE_PATH           = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/examples"
 
 # If the value of the EXAMPLE_PATH tag contains directories, you can use the
 # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp and
@@ -1140,7 +1140,7 @@ HTML_FILE_EXTENSION    = .html
 # of the possible markers and block names see the documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_HEADER            = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/header.html"
+HTML_HEADER            = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/header.html"
 
 # The HTML_FOOTER tag can be used to specify a user-defined HTML footer for each
 # generated HTML page. If the tag is left blank doxygen will generate a standard
@@ -1150,7 +1150,7 @@ HTML_HEADER            = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs
 # that doxygen normally uses.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_FOOTER            = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/footer.html"
+HTML_FOOTER            = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/footer.html"
 
 # The HTML_STYLESHEET tag can be used to specify a user-defined cascading style
 # sheet that is used by each HTML page. It can be used to fine-tune the look of
@@ -1175,7 +1175,7 @@ HTML_STYLESHEET        =
 # list). For an example see the documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/extra.css"
+HTML_EXTRA_STYLESHEET  = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/extra.css"
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note
@@ -1185,7 +1185,7 @@ HTML_EXTRA_STYLESHEET  = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       = "/Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs/spaces.svg"
+HTML_EXTRA_FILES       = "/Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs/spaces.svg"
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to

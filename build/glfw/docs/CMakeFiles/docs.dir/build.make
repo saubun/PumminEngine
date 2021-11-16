@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.20.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno
+CMAKE_SOURCE_DIR = /Users/dameon0430/Documents/Dev/PumminEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/OpenGLCherno/build
+CMAKE_BINARY_DIR = /Users/dameon0430/Documents/Dev/PumminEngine/build
 
 # Utility rule file for docs.
 
@@ -67,8 +67,8 @@ include glfw/docs/CMakeFiles/docs.dir/compiler_depend.make
 include glfw/docs/CMakeFiles/docs.dir/progress.make
 
 glfw/docs/CMakeFiles/docs:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dameon0430/Documents/Dev/OpenGLCherno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HTML documentation"
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs && /usr/local/bin/doxygen
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dameon0430/Documents/Dev/PumminEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HTML documentation"
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs && /usr/local/bin/doxygen
 
 docs: glfw/docs/CMakeFiles/docs
 docs: glfw/docs/CMakeFiles/docs.dir/build.make
@@ -79,10 +79,10 @@ glfw/docs/CMakeFiles/docs.dir/build: docs
 .PHONY : glfw/docs/CMakeFiles/docs.dir/build
 
 glfw/docs/CMakeFiles/docs.dir/clean:
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
 .PHONY : glfw/docs/CMakeFiles/docs.dir/clean
 
 glfw/docs/CMakeFiles/docs.dir/depend:
-	cd /Users/dameon0430/Documents/Dev/OpenGLCherno/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dameon0430/Documents/Dev/OpenGLCherno /Users/dameon0430/Documents/Dev/OpenGLCherno/glfw/docs /Users/dameon0430/Documents/Dev/OpenGLCherno/build /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs /Users/dameon0430/Documents/Dev/OpenGLCherno/build/glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dameon0430/Documents/Dev/PumminEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dameon0430/Documents/Dev/PumminEngine /Users/dameon0430/Documents/Dev/PumminEngine/glfw/docs /Users/dameon0430/Documents/Dev/PumminEngine/build /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs /Users/dameon0430/Documents/Dev/PumminEngine/build/glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : glfw/docs/CMakeFiles/docs.dir/depend
 
