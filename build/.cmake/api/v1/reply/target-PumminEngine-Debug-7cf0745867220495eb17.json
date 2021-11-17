@@ -27,31 +27,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 47,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 43,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 44,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 53,
+				"line" : 55,
 				"parent" : 0
 			}
 		]
@@ -114,11 +114,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@12507ebf64a5258d241e"
+			"id" : "libglew_static::@53e89909b58b5208c234"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "libglew_static::@53e89909b58b5208c234"
+			"id" : "glfw::@12507ebf64a5258d241e"
 		}
 	],
 	"id" : "PumminEngine::@6890427a1f51a3e7e1df",

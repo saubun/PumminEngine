@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "7"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1784,6 +1784,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/glew"
+		},
+		{
+			"name" : "glm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/build/glm"
+		},
+		{
+			"name" : "glm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dameon0430/Documents/Dev/PumminEngine/glm"
 		},
 		{
 			"name" : "libglew_shared_LIB_DEPENDS",
