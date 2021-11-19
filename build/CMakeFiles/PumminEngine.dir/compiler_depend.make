@@ -227,14 +227,9 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference \
-  ../glfw/include/GLFW/glfw3.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/os/availability.h
+  ../glew/include/GL/glew.h \
+  ../glfw/include/GLFW/glfw3.h
 
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:
 
 ../glfw/include/GLFW/glfw3.h:
 
@@ -275,8 +270,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_u_char.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/streambuf:
 
@@ -345,6 +338,8 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/mutex:
+
+../glew/include/GL/glew.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_mode_t.h:
 
@@ -425,8 +420,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/iterator:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ssize_t.h:
 
@@ -637,8 +630,6 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: ../src/main.cpp \
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/stdio.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/locale:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/os/availability.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_types/_wctrans_t.h:
 

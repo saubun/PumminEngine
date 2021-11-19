@@ -225,8 +225,5 @@ CMakeFiles/PumminEngine.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference \
-  /Users/dameon0430/Documents/Dev/PumminEngine/glfw/include/GLFW/glfw3.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/os/availability.h
+  /Users/dameon0430/Documents/Dev/PumminEngine/glew/include/GL/glew.h \
+  /Users/dameon0430/Documents/Dev/PumminEngine/glfw/include/GLFW/glfw3.h
